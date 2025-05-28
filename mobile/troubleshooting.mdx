@@ -1,0 +1,393 @@
+---
+title: Mobile App Troubleshooting
+description: Solutions for common issues with the Stride mobile app
+---
+
+## Common Issues
+
+Quick solutions for the most frequent problems with the Stride mobile app.
+
+## App Crashes
+
+### On Startup
+
+<Steps>
+  <Step title="Force Quit App">
+    - iOS: Swipe up and flick Stride away
+    - Android: Recent apps → Swipe away
+  </Step>
+  
+  <Step title="Restart Phone">
+    Full power cycle often helps
+  </Step>
+  
+  <Step title="Check Updates">
+    - App Store/Play Store
+    - Update if available
+    - Check release notes
+  </Step>
+  
+  <Step title="Reinstall App">
+    - Delete app (data syncs to cloud)
+    - Fresh install from store
+    - Log back in
+  </Step>
+</Steps>
+
+### During Recording
+
+**Immediate Actions**:
+1. Note the time/distance
+2. Restart app quickly
+3. Resume recording if possible
+4. Save partial data
+
+**Prevention**:
+- Close other apps
+- Ensure adequate storage
+- Keep phone cool
+- Disable battery optimization
+
+## Sync Problems
+
+### Activities Not Uploading
+
+<Tabs>
+  <Tab title="Check Connection">
+    1. Verify internet connection
+    2. Try WiFi and cellular
+    3. Check Stride server status
+    4. Force refresh (pull down)
+  </Tab>
+  
+  <Tab title="Manual Sync">
+    1. Go to Activities tab
+    2. Find unsynced activity (cloud icon)
+    3. Tap to retry upload
+    4. Watch for error messages
+  </Tab>
+  
+  <Tab title="Reset Sync">
+    1. Log out of app
+    2. Clear app cache
+    3. Log back in
+    4. Activities should re-sync
+  </Tab>
+</Tabs>
+
+### Workout Downloads
+
+If workouts won't download:
+- Check account has active subscription
+- Verify workout was sent to device
+- Ensure good internet connection
+- Try downloading on WiFi
+- Contact support if persists
+
+## GPS Issues
+
+### Poor GPS Signal
+
+<AccordionGroup>
+  <Accordion title="Before Starting">
+    - Wait for GPS lock (green indicator)
+    - Stand still in open area
+    - Away from buildings/trees
+    - Give it 30-60 seconds
+  </Accordion>
+  
+  <Accordion title="Settings Check">
+    - Location services ON
+    - Stride has "Always" permission
+    - Precise location enabled
+    - Not in airplane mode
+  </Accordion>
+  
+  <Accordion title="Improve Accuracy">
+    - Download GPS assistance data on WiFi
+    - Calibrate compass (figure-8 motion)
+    - Reset network settings
+    - Check for phone case interference
+  </Accordion>
+</AccordionGroup>
+
+### GPS Drift
+
+Symptoms: Impossible speeds, wrong distance
+
+**Solutions**:
+1. Enable GPS smoothing in settings
+2. Use paired speed sensor
+3. Post-ride correction available
+4. Report persistent issues
+
+## Sensor Connection Issues
+
+### Sensors Won't Connect
+
+<Warning>
+  Make sure no other apps are connected to your sensors. Only one app can connect at a time.
+</Warning>
+
+**Troubleshooting Steps**:
+
+1. **Basic Checks**
+   - Bluetooth ON
+   - Location services ON
+   - Sensor has battery
+   - Within range (10 feet)
+
+2. **Reset Bluetooth**
+   - Toggle Bluetooth off/on
+   - Wait 10 seconds
+   - Try connecting again
+
+3. **Forget and Re-pair**
+   - Remove sensor from app
+   - Reset sensor if possible
+   - Add as new sensor
+
+4. **Phone Settings**
+   - Check Bluetooth device limit
+   - Remove unused devices
+   - Reset network settings
+
+### Intermittent Dropouts
+
+Common causes and fixes:
+
+| Cause | Solution |
+|-------|----------|
+| Low battery | Replace sensor battery |
+| Interference | Move phone closer |
+| Phone case | Remove case or reposition |
+| Multiple devices | Reduce active connections |
+| Old firmware | Update sensor firmware |
+
+## Battery Drain
+
+### Excessive Battery Use
+
+**Power-Saving Settings**:
+- Reduce screen brightness
+- Turn off screen between checks
+- Disable auto-upload during ride
+- Use airplane mode + Bluetooth
+- Close background apps
+
+**Hardware Tips**:
+- Keep phone cool
+- Use external battery pack
+- Mount out of direct sun
+- Consider dedicated device
+
+### Optimization by Phone
+
+<Tabs>
+  <Tab title="iPhone">
+    - Disable Background App Refresh
+    - Turn off Raise to Wake
+    - Use Low Power Mode carefully
+    - Keep iOS updated
+  </Tab>
+  
+  <Tab title="Android">
+    - Exempt Stride from battery optimization
+    - Disable adaptive battery for Stride
+    - Use Battery Saver cautiously
+    - Check manufacturer settings
+  </Tab>
+</Tabs>
+
+## Display Problems
+
+### Screen Issues
+
+**Black Screen During Ride**:
+- Check screen timeout settings
+- Enable "Keep Screen On" in Stride
+- Verify not in pocket mode
+- Tap to wake if needed
+
+**Data Not Updating**:
+- Check sensor connections
+- Verify not paused
+- Force refresh display
+- Restart recording if needed
+
+### Layout Problems
+
+Reset to defaults:
+1. Settings → Display
+2. Reset Layout
+3. Reconfigure as needed
+4. Save custom layout
+
+## Audio Problems
+
+### No Audio Alerts
+
+Verify settings:
+- ✅ Audio alerts enabled
+- ✅ Phone not on silent
+- ✅ Volume turned up
+- ✅ Bluetooth audio connected?
+- ✅ Do Not Disturb off
+
+### Audio Over Music
+
+For alerts during music:
+1. Enable "Duck Audio" setting
+2. Adjust alert volume separately
+3. Test with music playing
+4. Use single earbud for safety
+
+## Data Accuracy
+
+### Wrong Metrics
+
+<AccordionGroup>
+  <Accordion title="Power Too High/Low">
+    - Calibrate power meter
+    - Check correct FTP set
+    - Verify sensor selection
+    - Look for interference
+  </Accordion>
+  
+  <Accordion title="Heart Rate Errors">
+    - Adjust strap position
+    - Wet electrodes properly
+    - Check for electrical interference
+    - Replace if worn out
+  </Accordion>
+  
+  <Accordion title="Speed/Distance Wrong">
+    - Verify wheel size setting
+    - Calibrate speed sensor
+    - Check GPS accuracy
+    - Use most accurate source
+  </Accordion>
+</AccordionGroup>
+
+## Login Issues
+
+### Can't Sign In
+
+1. **Check Credentials**
+   - Correct email/password
+   - No extra spaces
+   - Caps lock off
+
+2. **Reset Password**
+   - Use "Forgot Password"
+   - Check spam folder
+   - Try different email
+
+3. **Account Issues**
+   - Verify account active
+   - Check subscription status
+   - Contact support
+
+### Session Expired
+
+Normal after updates:
+- Log in again
+- Check "Remember Me"
+- Enable biometric login
+- Save password securely
+
+## Performance Issues
+
+### App Running Slowly
+
+**Quick Fixes**:
+1. Force quit and restart
+2. Clear app cache
+3. Free up phone storage
+4. Reduce data field count
+5. Disable unnecessary features
+
+**Deep Clean**:
+1. Export important data
+2. Delete and reinstall app
+3. Start fresh configuration
+4. Add features gradually
+
+### Freezing During Workouts
+
+Prevent freezes:
+- Download workouts offline
+- Close other apps
+- Adequate storage space
+- Cool environment
+- Regular app updates
+
+## Error Messages
+
+### Common Errors
+
+| Error | Meaning | Solution |
+|-------|---------|----------|
+| "No Internet" | Can't reach servers | Check connection |
+| "Sync Failed" | Upload problem | Retry later |
+| "Sensor Lost" | Bluetooth drop | Move closer |
+| "Storage Full" | No space | Clear cache/photos |
+| "Invalid Data" | Corrupt file | Re-record activity |
+
+### Reporting Bugs
+
+Help us fix issues:
+1. Screenshot error
+2. Note steps to reproduce
+3. Include device model
+4. Send to support@stride.is
+5. Check for updates
+
+## Prevention Tips
+
+### Regular Maintenance
+
+Weekly tasks:
+- Clear app cache
+- Check for updates
+- Verify sensor batteries
+- Test before important rides
+
+Monthly tasks:
+- Full app refresh
+- Review permissions
+- Update phone OS
+- Clean sensors
+
+### Before Important Rides
+
+Pre-ride checklist:
+- [ ] App updated
+- [ ] Phone charged
+- [ ] Sensors paired
+- [ ] GPS lock acquired
+- [ ] Test recording 
+- [ ] Offline maps downloaded
+
+<Info>
+  **Support**: If problems persist, email support@stride.is with device details and screenshots.
+</Info>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Mobile App Setup"
+    icon="mobile"
+    href="/getting-started/mobile-app-setup"
+  >
+    Initial configuration guide
+  </Card>
+  <Card
+    title="Sensor Setup"
+    icon="bluetooth"
+    href="/mobile/sensors-and-bluetooth"
+  >
+    Connect your devices
+  </Card>
+</CardGroup>

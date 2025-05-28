@@ -1,0 +1,358 @@
+---
+title: Activity Analysis
+description: Deep dive into your ride data to understand performance and track improvements
+---
+
+## Activity Overview
+
+When you open an activity in Stride, you'll see comprehensive analysis tools to understand your performance.
+
+## Summary Section
+
+### Key Metrics Panel
+
+At the top of every activity:
+
+<CardGroup cols={3}>
+  <Card title="Training Score">
+    Overall training stress from this activity
+  </Card>
+  <Card title="Intensity Factor">
+    How hard relative to your FTP (NP/FTP)
+  </Card>
+  <Card title="Efficiency">
+    Power to heart rate relationship
+  </Card>
+</CardGroup>
+
+### Primary Stats
+
+**Power Metrics** (if available):
+- Average Power
+- Normalized Power  
+- Max Power
+- Work (kJ)
+
+**Other Metrics**:
+- Duration (moving/elapsed)
+- Distance
+- Elevation Gain
+- Average Speed
+
+## Analysis Charts
+
+### Power Chart
+
+The main analysis tool showing:
+- **Purple line**: Instant power
+- **Smooth line**: 30-second average
+- **Zones**: Colored backgrounds
+- **Intervals**: Highlighted sections
+
+**Interactive Features**:
+- Click and drag to zoom
+- Hover for exact values
+- Select sections for interval analysis
+- Toggle different data streams
+
+### Multi-Data View
+
+Overlay multiple metrics:
+- Power + Heart Rate
+- Power + Cadence
+- Speed + Elevation
+- Any combination you need
+
+<Info>
+  Use the eye icons to show/hide data streams. Customize colors and scales in settings.
+</Info>
+
+## Zone Distribution
+
+### Power Zones
+
+See time spent in each zone:
+- Visual bar chart
+- Percentage of ride time
+- Compare to target distribution
+- Weighted by intensity
+
+### What Good Distribution Looks Like
+
+**Endurance Ride**:
+- Zone 1-2: 80-90%
+- Zone 3: 10-20%
+- Zone 4+: Minimal
+
+**Interval Workout**:
+- Target zone: 20-30%
+- Recovery: 40-50%
+- Other: 20-30%
+
+## Interval Analysis
+
+### Automatic Detection
+
+Stride identifies intervals based on:
+- Power patterns
+- Sustained efforts
+- Rest periods
+- Workout structure
+
+### Interval Details
+
+For each interval:
+- Average power
+- Normalized power
+- Duration
+- Variability Index
+- Achievement of target
+
+### Comparing Intervals
+
+<Tabs>
+  <Tab title="Within Workout">
+    See if you maintained power across sets:
+    - Interval 1: 285W
+    - Interval 2: 282W (-1%)
+    - Interval 3: 278W (-3%)
+    - Shows good pacing!
+  </Tab>
+  
+  <Tab title="Across Workouts">
+    Track progression over time:
+    - 4 weeks ago: 270W average
+    - 2 weeks ago: 278W average
+    - Today: 285W average
+    - Clear improvement!
+  </Tab>
+</Tabs>
+
+## Power Curves
+
+### Activity Power Curve
+
+Your best power for every duration in THIS ride:
+- Sprint power (1-15 seconds)
+- Anaerobic (30s - 2 min)
+- VO2 max (3-8 min)
+- Threshold (20-60 min)
+
+### Comparing to Your Best
+
+Options to overlay:
+- Last 30 days best
+- Last 90 days best
+- Season best
+- All-time best
+
+**Reading the Comparison**:
+- 🟢 Above previous best (new record!)
+- 🟡 Within 5% of best
+- 🔵 Normal performance
+- 🔴 Significantly below (fatigue?)
+
+## Advanced Metrics
+
+### Normalized Power (NP)
+
+Why it matters:
+- Better represents metabolic cost
+- Accounts for variability
+- Used for IF calculation
+
+**NP vs Average Power**:
+- Steady ride: NP ≈ Average
+- Variable ride: NP > Average
+- Very punchy: NP >> Average
+
+### Variability Index (VI)
+
+VI = Normalized Power ÷ Average Power
+
+**Interpreting VI**:
+- 1.00-1.05: Very steady (TT, trainer)
+- 1.05-1.15: Normal road ride
+- 1.15-1.25: Variable (group, hills)
+- >1.25: Very stochastic (crits, attacks)
+
+### Efficiency Factor (EF)
+
+EF = Normalized Power ÷ Average HR
+
+**Tracking EF**:
+- Higher = more efficient
+- Track over similar efforts
+- Indicates fitness gains
+- Account for conditions
+
+## Segments & Achievements
+
+### Segment Matching
+
+Stride automatically finds:
+- Strava segments (if connected)
+- Popular local climbs
+- Your previous efforts
+- Leaderboard positions
+
+### Personal Records
+
+Highlighted achievements:
+- ⭐ Power PRs (5s, 1min, 5min, 20min)
+- 🏔️ Climbing PRs (VAM, elevation)
+- 🚀 Speed records
+- 💪 Longest effort at threshold
+
+## Environmental Factors
+
+### Weather Data
+
+Automatically captured:
+- Temperature
+- Wind speed/direction
+- Humidity
+- Calculated impact on performance
+
+### Elevation Profile
+
+Interactive elevation chart:
+- Gradient coloring
+- Power overlay
+- Speed changes
+- Key climbs marked
+
+<Warning>
+  Weather can significantly impact power. A headwind can add 20-50W to maintain the same speed!
+</Warning>
+
+## Comparing Activities
+
+### Side-by-Side Analysis
+
+Compare two similar activities:
+1. Select baseline activity
+2. Click "Compare"
+3. Choose comparison activity
+4. View differences
+
+**Useful Comparisons**:
+- Same route, different days
+- Before/after training block
+- Different pacing strategies
+- Equipment changes
+
+### Bulk Analysis
+
+Review multiple activities:
+- Filter by type/date/route
+- See trends over time
+- Export data for deeper analysis
+- Create custom reports
+
+## Maps & Routes
+
+### Interactive Map
+
+Features:
+- Color-coded by power/speed
+- Zoom to any section
+- Click for data at that point
+- Toggle map styles
+
+### Route Analysis
+
+- Total distance vs moving distance
+- Time stopped
+- Average gradient
+- Hardest sections
+
+## Sharing & Export
+
+### Share Options
+
+<Tabs>
+  <Tab title="Social Sharing">
+    - Public link
+    - Summary image
+    - Key stats overlay
+    - Privacy controls
+  </Tab>
+  
+  <Tab title="Coach/Team">
+    - Full data access
+    - Comments enabled
+    - Training notes
+    - Private feedback
+  </Tab>
+  
+  <Tab title="Export Data">
+    - Original .FIT file
+    - CSV of all metrics
+    - GPX route file
+    - PDF report
+  </Tab>
+</Tabs>
+
+## Using Analysis for Improvement
+
+### What to Look For
+
+**Good Execution**:
+- Even power across intervals
+- Hit target zones
+- Appropriate VI for workout type
+- Power/HR tracking together
+
+**Areas for Improvement**:
+- Power fading in later intervals
+- Too much time in wrong zones
+- VI too high for goal
+- HR not responding (overtraining?)
+
+### Action Items
+
+After each key workout:
+1. ✅ Did I hit my targets?
+2. 📈 Any new power records?
+3. 💭 How did it feel vs numbers?
+4. 📝 What to adjust next time?
+
+<Info>
+  **Pro Tip**: Add notes while the ride is fresh. Include RPE, nutrition, sleep quality - context that numbers don't capture.
+</Info>
+
+## Quick Analysis Tips
+
+### Time-Saving Shortcuts
+
+- **Spacebar**: Play/pause data replay
+- **Arrow keys**: Jump between intervals
+- **Shift+Drag**: Measure any section
+- **Double-click**: Reset zoom
+
+### Key Questions
+
+For every activity, ask:
+1. Did I achieve the workout's purpose?
+2. What does this tell me about my fitness?
+3. What should I do differently next time?
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Progress Tracking"
+    icon="trending-up"
+    href="/analysis/progress-tracking"
+  >
+    Monitor long-term improvements
+  </Card>
+  <Card
+    title="Comparing Activities"
+    icon="code-compare"
+    href="/analysis/comparing-activities"
+  >
+    Advanced comparison techniques
+  </Card>
+</CardGroup>

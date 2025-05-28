@@ -1,55 +1,96 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Stride",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#E55A2B",
+    "light": "#FF8C5A",
+    "dark": "#E55A2B"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "getting-started/quick-start",
+              "getting-started/connecting-devices",
+              "getting-started/mobile-app-setup"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Understanding Your Data",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "concepts/metrics",
+              "concepts/load-and-fatigue",
+              "concepts/curves",
+              "concepts/training-score"
+            ]
+          },
+          {
+            "group": "Daily Training",
+            "pages": [
+              "daily-training/dashboard",
+              "daily-training/recording-activities",
+              "daily-training/activity-analysis",
+              "analysis/weather"
+            ]
+          },
+          {
+            "group": "Structured Training",
+            "pages": [
+              "training/plans",
+              "training/workouts",
+              "training/indoor-training",
+              "training/syncing-workouts",
+              "training/plan-builder"
+            ]
+          },
+          {
+            "group": "Performance Analysis",
+            "pages": [
+              "analysis/progress-tracking",
+              "analysis/comparing-activities",
+              "analysis/courses"
+            ]
+          },
+          {
+            "group": "Mobile App",
+            "pages": [
+              "training/using-the-app",
+              "mobile/sensors-and-bluetooth",
+              "mobile/troubleshooting"
+            ]
+          },
+          {
+            "group": "Teams & Social",
+            "pages": [
+              "teams/joining-teams",
+              "teams/coaching"
+            ]
+          },
+          {
+            "group": "Account & Settings",
+            "pages": [
+              "account/profile",
+              "account/integrations",
+              "account/billing"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Resources",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "reference/glossary",
+              "reference/faq"
             ]
           }
         ]
@@ -58,45 +99,27 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Guide",
+          "href": "https://docs.stride.is",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@stride.is"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open App",
+      "href": "https://stride.is"
     }
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }

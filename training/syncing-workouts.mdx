@@ -1,0 +1,247 @@
+---
+title: Syncing Workouts to Devices
+description: Send structured workouts to your Garmin or Wahoo device
+---
+
+## Syncing Workouts to Your Device
+
+One of Stride's most powerful features is the ability to create workouts and sync them directly to your Garmin or Wahoo device. This means you can follow structured training with real-time power targets and automatic lap advances.
+
+## Garmin Workout Sync
+
+### Prerequisites
+- Garmin device that supports structured workouts (Edge series, Forerunner, Fenix, etc.)
+- Active Garmin Connect integration in Stride
+- Garmin Connect Mobile app on your phone
+
+### How to Sync a Single Workout
+
+<Steps>
+  <Step title="Create or Find a Workout">
+    Go to **Workouts** in Stride and either:
+    - Create a new workout
+    - Select an existing workout from the library
+  </Step>
+
+  <Step title="Click 'Send to Garmin'">
+    On the workout detail page, click the **Send to Garmin** button
+    
+    <Info>
+      The button will show a loading state while sending
+    </Info>
+  </Step>
+
+  <Step title="Open Garmin Connect Mobile">
+    - Open the Garmin Connect app on your phone
+    - Ensure Bluetooth is enabled
+    - Your device should be nearby and powered on
+  </Step>
+
+  <Step title="Sync Your Device">
+    - In Garmin Connect, pull down to refresh
+    - The workout will download to your device
+    - Look for the blue sync icon on your Garmin device
+  </Step>
+
+  <Step title="Find on Device">
+    On your Garmin:
+    - Press Menu/Settings
+    - Navigate to **Training → Workouts**
+    - Select your Stride workout
+    - Press Start when ready to begin
+  </Step>
+</Steps>
+
+### Syncing Training Plans to Garmin
+
+<Steps>
+  <Step title="Start a Training Plan">
+    From **Plans**, select and start a training plan
+  </Step>
+
+  <Step title="View Calendar">
+    Your plan workouts appear on your calendar with dates
+  </Step>
+
+  <Step title="Auto-Sync Enabled">
+    Workouts automatically sync to Garmin Connect calendar
+  </Step>
+
+  <Step title="Daily Sync">
+    Each day's workout appears on your device when you sync
+  </Step>
+</Steps>
+
+## Wahoo Workout Sync
+
+### Prerequisites
+- Wahoo ELEMNT device (BOLT, ROAM, RIVAL)
+- Active Wahoo integration in Stride
+- ELEMNT Companion app on your phone
+
+### Syncing Individual Workouts
+
+<Steps>
+  <Step title="Select Your Workout">
+    Navigate to the workout you want to sync in Stride
+  </Step>
+
+  <Step title="Send to Wahoo">
+    Click **Send to Wahoo** on the workout page
+    
+    <Warning>
+      Wahoo only supports power-based workouts, not heart rate
+    </Warning>
+  </Step>
+
+  <Step title="Open ELEMNT App">
+    - Launch the ELEMNT Companion app
+    - Ensure your ELEMNT is paired via Bluetooth
+  </Step>
+
+  <Step title="Sync Your ELEMNT">
+    - The workout appears in your planned workouts
+    - Sync your ELEMNT by pressing the power button
+    - Look for the sync icon to confirm completion
+  </Step>
+
+  <Step title="Select on Device">
+    On your ELEMNT:
+    - From the ride screen, press the page button
+    - Navigate to **Planned Workouts**
+    - Select your Stride workout
+    - Press start to begin
+  </Step>
+</Steps>
+
+### Syncing Full Plans to Wahoo SYSTM
+
+<Steps>
+  <Step title="Choose a Plan">
+    Select a training plan from the Stride library
+  </Step>
+
+  <Step title="Export to Wahoo">
+    Click **Export to Wahoo SYSTM** on the plan page
+  </Step>
+
+  <Step title="Authorize Transfer">
+    Confirm the plan export when prompted
+  </Step>
+
+  <Step title="Open Wahoo SYSTM">
+    - The plan appears in your SYSTM calendar
+    - Workouts sync to your ELEMNT automatically
+  </Step>
+</Steps>
+
+## Understanding Workout Structure
+
+### Power-Based Workouts
+Most effective for training with structured intervals:
+- **Target Power**: Set as % of FTP or absolute watts
+- **Duration**: Time or distance-based intervals
+- **Cadence Targets**: Optional RPM guidance
+
+### Workout Elements
+1. **Warm-up**: Gradual power increase
+2. **Main Set**: Your intervals or steady effort
+3. **Cool-down**: Easy spinning to finish
+
+### Example Workout Display
+```
+Warm-up: 10 min @ 50-65% FTP
+Main Set: 
+  - 4 x 8 min @ 95% FTP
+  - 4 min @ 55% FTP between
+Cool-down: 10 min @ 50% FTP
+```
+
+## Tips for Successful Workout Execution
+
+### Before You Start
+- ✅ Ensure sensors are connected (power, HR, cadence)
+- ✅ Calibrate your power meter
+- ✅ Check battery levels on all devices
+- ✅ For indoor: set trainer to ERG mode
+
+### During the Workout
+- 📊 Your device will show target power and time remaining
+- 🔔 Audio/visual alerts for interval changes
+- ⏸️ Use lap button to pause if needed
+- 📈 Stay within 5-10 watts of target
+
+### ERG Mode (Indoor)
+When connected to a smart trainer:
+- Trainer automatically adjusts resistance
+- Maintain steady cadence (85-95 rpm typical)
+- Don't shift gears - let ERG do the work
+- Disable ERG for sprint intervals
+
+## Troubleshooting Sync Issues
+
+### Workout Not Appearing
+
+<Tabs>
+  <Tab title="Garmin">
+    1. Check Garmin Connect integration is active
+    2. Force sync in Garmin Connect Mobile
+    3. Restart your Garmin device
+    4. Re-send workout from Stride
+    5. Check workout name doesn't contain special characters
+  </Tab>
+  
+  <Tab title="Wahoo">
+    1. Verify Wahoo integration is connected
+    2. Open ELEMNT app and refresh
+    3. Check ELEMNT has latest firmware
+    4. Ensure workout is power-based (not HR)
+    5. Try removing and re-adding the workout
+  </Tab>
+</Tabs>
+
+### Sync Delays
+- **Normal sync time**: 2-5 minutes
+- **If longer**: Check internet connection
+- **Still not working**: Disconnect and reconnect integration
+
+### Power Targets Wrong
+- Verify your FTP is set correctly in Stride
+- Check device has same FTP value
+- Ensure workout was created after last FTP update
+
+## Advanced Features
+
+### Outdoor Workout Mode
+For Garmin devices:
+- Enable "Target Power Alerts"
+- Use 3-second average power
+- Account for terrain with wider target ranges
+
+### Creating Device-Specific Workouts
+- **Garmin**: Supports complex workouts with HR fallback
+- **Wahoo**: Best for simple power-based intervals
+- **Both**: Support lap button progressions
+
+<Info>
+  **Pro Tip**: Create simpler workouts for outdoor riding where holding exact power is harder. Use wider target ranges (e.g., 90-100% FTP instead of 95% FTP).
+</Info>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Creating Workouts"
+    icon="plus"
+    href="/training/workouts"
+  >
+    Build custom workouts for your training
+  </Card>
+  <Card
+    title="Indoor Training Guide"
+    icon="house"
+    href="/training/indoor-training"
+  >
+    Set up your smart trainer with Stride
+  </Card>
+</CardGroup>

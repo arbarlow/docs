@@ -1,0 +1,234 @@
+---
+title: Training Score Explained
+description: Understanding how Stride calculates training stress from your workouts
+---
+
+## What is Training Score?
+
+**Training Score (TS)** is Stride's measure of how much training stress a single workout creates. It combines:
+- **Duration**: How long you trained
+- **Intensity**: How hard you worked
+- **Your fitness**: Relative to your FTP or threshold HR
+
+<Info>
+  Think of Training Score as the "cost" of a workout - higher scores mean more stress on your body (and more adaptation potential).
+</Info>
+
+## How Training Score is Calculated
+
+### Power-Based Calculation
+
+For rides with power data:
+
+```
+Training Score = (Intensity Factor)² × Duration in hours × 100
+```
+
+Where:
+- **Intensity Factor (IF)** = Normalized Power ÷ FTP
+- **Normalized Power** = Weighted average accounting for variability
+- **Duration** = Moving time in decimal hours
+
+### Example Calculation
+
+A 2-hour ride with:
+- Normalized Power: 180W
+- Your FTP: 250W
+- IF = 180 ÷ 250 = 0.72
+- TS = (0.72)² × 2 × 100 = 104
+
+### Heart Rate-Based Calculation
+
+When power isn't available:
+- Uses time in HR zones
+- Weighted by zone intensity
+- Less precise than power but still valuable
+
+## Training Score Guidelines
+
+### By Workout Type
+
+| Workout Type | Typical TS Range | Example |
+|--------------|------------------|---------|
+| Recovery Ride | 20-40 | 1 hour easy spin |
+| Endurance Ride | 50-80 | 2-3 hour zone 2 |
+| Tempo Workout | 80-120 | 90 min with tempo intervals |
+| Threshold Session | 100-150 | 1 hour with FTP intervals |
+| Long Endurance | 150-250 | 4-5 hour steady ride |
+| Epic/Race | 250+ | Century or hard race |
+
+### By Fitness Level
+
+Same workout, different Training Scores:
+
+| Rider | FTP | 1hr @ 200W | Training Score |
+|-------|-----|------------|----------------|
+| Beginner | 150W | Very hard | 178 |
+| Intermediate | 200W | Threshold | 100 |
+| Advanced | 250W | Tempo | 64 |
+| Pro | 300W | Endurance | 44 |
+
+<Warning>
+  This shows why you can't compare Training Scores between riders - it's relative to YOUR fitness.
+</Warning>
+
+## Factors Affecting Training Score
+
+### Increases Training Score
+- **Longer duration** (exponential effect)
+- **Higher intensity** (squared relationship)
+- **More time above threshold**
+- **High variability** (intervals vs steady)
+
+### Decreases Training Score
+- **Lower FTP setting** (makes same power "harder")
+- **Coasting/stops** (only counts moving time)
+- **Recovery periods** in intervals
+
+### Doesn't Affect Training Score
+- **Total distance** (100 TS could be 50km or 150km)
+- **Average speed** (depends on conditions)
+- **Elevation gain** (unless it affects power)
+- **Weather** (but may affect your power output)
+
+## Normalized vs Average Power
+
+### Why Normalized Power?
+
+Average power doesn't capture the true physiological cost:
+
+**Steady Ride**: 
+- 1 hour at constant 200W
+- Average Power: 200W
+- Normalized Power: 200W
+
+**Variable Ride**:
+- 30 min at 100W, 30 min at 300W
+- Average Power: 200W
+- Normalized Power: ~245W
+- Much harder physiologically!
+
+### How It Works
+
+Normalized Power:
+1. Calculates 30-second rolling average
+2. Raises to 4th power (emphasizes hard efforts)
+3. Averages these values
+4. Takes 4th root of result
+
+This better represents metabolic cost of variable efforts.
+
+## Using Training Score Effectively
+
+### Daily Targets
+
+Based on your goals and fitness:
+
+| Day Type | Target TS | Purpose |
+|----------|-----------|---------|
+| Recovery | 0-40 | Active recovery |
+| Easy | 40-70 | Aerobic maintenance |
+| Moderate | 70-120 | Building fitness |
+| Hard | 120-180 | Key workouts |
+| Epic | 180+ | Special occasions |
+
+### Weekly Patterns
+
+**Build Week Example** (Load ~70):
+- Monday: Rest (0)
+- Tuesday: Intervals (100)
+- Wednesday: Endurance (60)
+- Thursday: Tempo (90)
+- Friday: Recovery (30)
+- Saturday: Long ride (180)
+- Sunday: Endurance (80)
+- **Total**: 540 TS
+
+### Progression Over Time
+
+Safe TS progression:
+- **Week 1**: 400 total
+- **Week 2**: 440 total (+10%)
+- **Week 3**: 480 total (+10%)
+- **Week 4**: 300 total (recovery)
+
+## Common Misconceptions
+
+### "Higher is Always Better"
+
+**Wrong!** Quality matters more than quantity:
+- 100 TS of focused intervals > 150 TS of junk miles
+- Recovery rides should be LOW TS
+- Chasing high TS daily leads to burnout
+
+### "Same TS = Same Workout"
+
+**Not true!** These could all be 100 TS:
+- 3 hours zone 2
+- 90 minutes with threshold intervals  
+- 2 hours tempo
+- 1 hour VO2 max workout
+
+Different adaptations despite same score!
+
+### "I Need High TS to Improve"
+
+**False!** Consistency beats big days:
+- 5 × 60 TS (300 weekly) > 2 × 150 TS
+- Sustainable training = long-term gains
+- Recovery allows adaptation
+
+## Training Score vs RPE
+
+Sometimes perceived effort doesn't match TS:
+
+### TS Seems Too Low
+- You may be fitter than your set FTP
+- Time to retest
+- Or you had a bad day (fatigue, heat, etc.)
+
+### TS Seems Too High  
+- FTP may be set too low
+- Check power meter calibration
+- Normal for very long rides
+
+<Info>
+  **Remember**: Training Score is a guide. How you feel matters too. High fatigue with "normal" TS? Rest anyway.
+</Info>
+
+## Optimizing Your Training Score
+
+### For Best Results
+
+1. **Accurate FTP**: Test regularly for proper TS calculation
+2. **Consistent measuring**: Same power meter ideal
+3. **Log all activities**: Include easy rides for complete picture
+4. **Monitor trends**: Weekly/monthly TS more important than daily
+5. **Balance intensity**: Mix of TS from different zones
+
+### Red Flags
+
+Watch for these patterns:
+- TS consistently >150 daily (unsustainable)
+- Never exceeding 80 TS (not challenging yourself)
+- Huge TS variations (300 one day, 0 the next)
+- Only high-intensity TS (no base)
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Load and Fatigue"
+    icon="chart-mixed"
+    href="/concepts/load-and-fatigue"
+  >
+    See how Training Score builds fitness over time
+  </Card>
+  <Card
+    title="Setting Your FTP"
+    icon="sliders"
+    href="/getting-started/setting-zones"
+  >
+    Ensure accurate Training Score calculation
+  </Card>
+</CardGroup>

@@ -1,0 +1,344 @@
+---
+title: Recording Activities
+description: How to record, upload, and manage your training activities in Stride
+---
+
+## Recording Methods
+
+Stride offers multiple ways to capture your training data:
+
+<CardGroup cols={2}>
+  <Card title="Auto-Sync" icon="rotate">
+    From Garmin, Wahoo devices
+  </Card>
+  <Card title="Mobile App" icon="mobile">
+    Direct recording with phone
+  </Card>
+  <Card title="Manual Upload" icon="upload">
+    .FIT, .TCX file uploads
+  </Card>
+  <Card title="Manual Entry" icon="keyboard">
+    Add basic activity data
+  </Card>
+</CardGroup>
+
+## Auto-Sync from Devices
+
+### How Auto-Sync Works
+
+Once connected, activities flow automatically:
+
+1. **Complete activity** on your device
+2. **Save and upload** to Garmin Connect/Wahoo
+3. **Stride syncs** within 5-15 minutes
+4. **Processing** adds metrics and analysis
+5. **Notification** when ready to view
+
+### Sync Status Indicators
+
+In your activity list:
+- 🔄 **Syncing**: Currently importing
+- ✅ **Synced**: Successfully imported
+- ⚠️ **Warning**: Partial data
+- ❌ **Error**: Sync failed
+
+### Troubleshooting Sync
+
+<AccordionGroup>
+  <Accordion title="Activity Not Appearing">
+    1. Check device uploaded to Garmin/Wahoo
+    2. Verify integration is connected
+    3. Wait 15 minutes (can be delayed)
+    4. Force sync from dashboard
+    5. Re-authorize if needed
+  </Accordion>
+  
+  <Accordion title="Missing Data">
+    Common causes:
+    - Sensors not paired during ride
+    - Device didn't record all streams
+    - File corrupted during upload
+    - Integration permissions changed
+  </Accordion>
+  
+  <Accordion title="Duplicate Activities">
+    If you see duplicates:
+    - Check you haven't uploaded manually too
+    - Disable one integration if using multiple
+    - Delete duplicate (keeps the best data)
+  </Accordion>
+</AccordionGroup>
+
+## Mobile App Recording
+
+### Starting a Recording
+
+<Steps>
+  <Step title="Open Stride App">
+    Tap the Stride icon on your phone
+  </Step>
+  
+  <Step title="Tap Record Button">
+    Large button at bottom center (➕)
+  </Step>
+  
+  <Step title="Select Activity Type">
+    - Outdoor Ride
+    - Indoor Ride
+    - Run
+    - Other
+  </Step>
+  
+  <Step title="Wait for Sensors">
+    - GPS lock (outdoor)
+    - Sensor connections
+    - Green indicators when ready
+  </Step>
+  
+  <Step title="Start Recording">
+    Tap START when everything's connected
+  </Step>
+</Steps>
+
+### During Recording
+
+**Screen Information**:
+- Current metrics (power, HR, speed)
+- Elapsed time and distance
+- Current lap data
+- Zone indicator
+
+**Controls**:
+- **Pause**: Tap pause icon (auto-pause available)
+- **Lap**: Mark segments manually
+- **Lock**: Prevent accidental stops
+- **End**: Long press to finish
+
+### Saving Activities
+
+When finished:
+1. **Stop recording** (long press)
+2. **Review summary** 
+3. **Add details**:
+   - Activity name
+   - Description/notes
+   - Perceived effort
+   - Equipment used
+4. **Save & Upload**
+
+## Manual File Upload
+
+### Supported File Types
+
+| Format | Extension | Contains | Best For |
+|--------|-----------|----------|----------|
+| FIT | .fit | All data | Modern devices |
+| TCX | .tcx | Most data | Older devices |
+| GPX | .gpx | Route only | Route sharing |
+
+### Upload Process
+
+<Steps>
+  <Step title="Get Your File">
+    - Download from device
+    - Export from other platforms
+    - Locate on computer
+  </Step>
+  
+  <Step title="Go to Activities">
+    Navigate to Activities page in Stride
+  </Step>
+  
+  <Step title="Click Upload">
+    Cloud icon in top right
+  </Step>
+  
+  <Step title="Select File">
+    - Drag and drop
+    - Or click to browse
+    - Multiple files supported
+  </Step>
+  
+  <Step title="Process & Review">
+    - Wait for processing
+    - Review detected data
+    - Edit if needed
+  </Step>
+</Steps>
+
+### Common Upload Issues
+
+<Warning>
+  Files must be under 25MB. Compress large files or split very long activities.
+</Warning>
+
+**File Problems**:
+- **Wrong format**: Convert to .FIT if possible
+- **Corrupted file**: Try exporting again
+- **Missing data**: Check original recording
+- **Wrong timestamps**: Verify device time zone
+
+## Manual Entry
+
+For when you don't have a file:
+
+### Basic Information
+
+Required fields:
+- **Date & Time**: When you started
+- **Duration**: Total time
+- **Activity Type**: Ride, run, etc.
+- **Distance**: (optional but recommended)
+
+### Additional Data
+
+Optional but valuable:
+- **Average Power**: For TS calculation
+- **Average HR**: Alternative metric
+- **Elevation Gain**: For climbing tracking
+- **Notes**: Weather, how you felt
+
+### When to Use Manual Entry
+
+- Forgot to record
+- Device failed
+- Borrowed bike/equipment
+- Group rides without your device
+- Trainer without connectivity
+
+## Activity Types
+
+### Supported Activities
+
+**Cycling**:
+- Road Cycling
+- Mountain Biking  
+- Indoor Cycling
+- Virtual Cycling
+- Cyclocross
+- Track Cycling
+
+**Running**:
+- Road Running
+- Trail Running
+- Track Running
+- Treadmill
+
+**Other**:
+- Swimming
+- Strength Training
+- Yoga
+- Cross-training
+
+### Activity Detection
+
+Stride automatically detects type based on:
+- Speed patterns
+- GPS data (indoor vs outdoor)
+- Device type
+- File metadata
+
+You can always correct if wrong!
+
+## Best Practices
+
+### For Quality Data
+
+1. **Calibrate sensors** before important rides
+2. **Start recording** before moving
+3. **Check connections** in first minute
+4. **Keep device charged** for long rides
+5. **Save immediately** after finishing
+
+### Data Completeness
+
+Priority data streams:
+1. **Power** (most important for cycling)
+2. **Heart Rate** (backup metric)
+3. **GPS** (for mapping/segments)
+4. **Cadence** (for efficiency)
+5. **Temperature** (context)
+
+### Activity Naming
+
+Good naming helps organization:
+- ❌ "Morning Ride"
+- ✅ "Tempo Intervals - River Loop"
+- ✅ "FTP Test - 20min"
+- ✅ "Recovery Spin - Post Race"
+
+## Privacy Settings
+
+### Activity Visibility
+
+Control who sees your activities:
+
+<Tabs>
+  <Tab title="Public">
+    - Visible to all Stride users
+    - Shows in team feeds
+    - Appears in segments
+  </Tab>
+  
+  <Tab title="Team Only">
+    - Visible to team members
+    - Hidden from public
+    - Coach can see (if applicable)
+  </Tab>
+  
+  <Tab title="Private">
+    - Only you can see
+    - Excluded from leaderboards
+    - Still counts for your metrics
+  </Tab>
+</Tabs>
+
+### Privacy Zones
+
+Create areas where GPS is hidden:
+1. Go to **Settings → Privacy**
+2. **Add Privacy Zone**
+3. Set center point (home/work)
+4. Choose radius (200m-1km)
+5. Activities auto-hide GPS in zones
+
+## Integration with Other Platforms
+
+### Strava Upload
+
+If connected, activities:
+- Auto-upload to Strava
+- Include Stride data
+- Match privacy settings
+- Sync comments back
+
+### TrainingPeaks Export
+
+Export your data:
+- Individual .FIT files
+- Bulk export option
+- Preserves all metrics
+- Compatible with most platforms
+
+<Info>
+  **Tip**: Star important activities to easily find them later. Use tags for organization (e.g., "intervals", "race", "test").
+</Info>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card
+    title="Analyzing Activities"
+    icon="chart-line"
+    href="/daily-training/activity-analysis"
+  >
+    Understanding your ride data
+  </Card>
+  <Card
+    title="Indoor Training"
+    icon="house"
+    href="/training/indoor-training"
+  >
+    Record with smart trainers
+  </Card>
+</CardGroup>

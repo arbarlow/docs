@@ -1,0 +1,410 @@
+---
+title: Frequently Asked Questions
+description: Common questions about Stride answered
+---
+
+## Getting Started
+
+<AccordionGroup>
+  <Accordion title="What devices work with Stride?">
+    Stride works with:
+    - **Garmin**: All cycling computers and watches
+    - **Wahoo**: All ELEMNT devices
+    - **Whoop**: For recovery data
+    - **Mobile**: iOS and Android apps
+    - **Power Meters**: Any ANT+ or Bluetooth
+    - **Heart Rate**: Any ANT+ or Bluetooth
+    
+    See [Connecting Devices](/getting-started/connecting-devices) for setup.
+  </Accordion>
+
+  <Accordion title="Do I need a power meter?">
+    No, but it's highly recommended for cycling. Power provides:
+    - Accurate training zones
+    - Precise Training Score
+    - Better workout execution
+    - Performance tracking
+    
+    You can use heart rate as an alternative, though it's less precise.
+  </Accordion>
+
+  <Accordion title="What's the difference between free and paid plans?">
+    **Free Plan**:
+    - 3 months of history
+    - Basic metrics
+    - Manual uploads
+    - Mobile app
+    
+    **Premium Plan** ($14.99/mo):
+    - Unlimited history
+    - Advanced analytics
+    - Training plans
+    - Workout builder
+    - Device sync
+    
+    See [Billing](/account/billing) for full comparison.
+  </Accordion>
+
+  <Accordion title="Can I import my historical data?">
+    Yes! When you connect:
+    - **Garmin**: Imports last 2 years
+    - **Wahoo**: Imports available history
+    - **Files**: Upload old .FIT files
+    - **Strava**: No activity import (only sends to Strava)
+    
+    Bulk upload supported for switching platforms.
+  </Accordion>
+</AccordionGroup>
+
+## Training Metrics
+
+<AccordionGroup>
+  <Accordion title="What is Training Score?">
+    Training Score (TS) measures the training stress of a single workout based on:
+    - Duration
+    - Intensity (relative to your FTP)
+    - Your fitness level
+    
+    Think of 100 TS as roughly 1 hour at threshold. See [Training Score](/concepts/training-score) for details.
+  </Accordion>
+
+  <Accordion title="What's the difference between Load and CTL?">
+    They're the same concept with different names:
+    - **Load** (Stride) = CTL (Training Peaks)
+    - Both represent fitness (42-day average)
+    - We use "Load" as it's more intuitive
+    
+    Same for Fatigue (ATL) and Form (TSB).
+  </Accordion>
+
+  <Accordion title="How often should I test my FTP?">
+    Test your FTP:
+    - Every 6-8 weeks during build periods
+    - Start of each season
+    - When workouts feel too easy/hard
+    - After 2+ weeks off
+    
+    Use 20-minute test or ramp test. See [Setting Zones](/getting-started/setting-zones).
+  </Accordion>
+
+  <Accordion title="Why is my Form negative?">
+    Negative Form is normal and often desirable:
+    - **-10 to -20**: Good training load
+    - **-20 to -30**: Heavy training block
+    - **Below -30**: Risk of overtraining
+    
+    Positive Form means you're fresh but not building fitness.
+  </Accordion>
+</AccordionGroup>
+
+## Activities & Syncing
+
+<AccordionGroup>
+  <Accordion title="Why aren't my activities syncing?">
+    Common causes:
+    1. Device hasn't synced to Garmin/Wahoo first
+    2. Integration disconnected
+    3. Privacy settings blocking
+    4. Server delays (wait 15 min)
+    
+    See [Troubleshooting](/mobile/troubleshooting) for fixes.
+  </Accordion>
+
+  <Accordion title="Can I edit activities after upload?">
+    Yes, you can edit:
+    - Name and description
+    - Activity type
+    - Equipment used
+    - Privacy settings
+    
+    You cannot edit:
+    - Power/HR data
+    - Distance/duration
+    - GPS tracks
+  </Accordion>
+
+  <Accordion title="Why does Strava integration seem limited?">
+    Strava integration is one-way:
+    - ✅ Stride uploads TO Strava
+    - ❌ Strava doesn't send activities to Stride
+    - ✅ Segments and social features work
+    
+    You need Garmin/Wahoo/Stride app to record activities.
+  </Accordion>
+
+  <Accordion title="How do I delete duplicate activities?">
+    1. Go to Activities list
+    2. Click the duplicate
+    3. Select **Delete** from menu
+    4. Confirm deletion
+    
+    To prevent: Use only one sync method (not both Garmin + file upload).
+  </Accordion>
+</AccordionGroup>
+
+## Workouts & Training
+
+<AccordionGroup>
+  <Accordion title="How do I get workouts on my Garmin?">
+    1. Create/select workout in Stride
+    2. Click **Send to Garmin**
+    3. Open Garmin Connect Mobile
+    4. Sync your device
+    5. Find in Training → Workouts
+    
+    See [Syncing Workouts](/training/syncing-workouts) for details.
+  </Accordion>
+
+  <Accordion title="What's ERG mode?">
+    ERG mode (smart trainers) automatically adjusts resistance to maintain target power regardless of your speed/cadence. 
+    
+    Tips:
+    - Keep steady cadence (85-95 rpm)
+    - Don't shift during ERG
+    - Disable for sprints
+  </Accordion>
+
+  <Accordion title="Can I create my own training plan?">
+    Yes! Premium users can:
+    - Build custom plans
+    - Modify existing plans
+    - Create workout library
+    - Share with teams
+    
+    See [Plan Builder](/training/plan-builder).
+  </Accordion>
+
+  <Accordion title="Why can't I complete the prescribed workouts?">
+    Common reasons:
+    - FTP set too high (retest)
+    - Accumulated fatigue (need recovery)
+    - Plan too aggressive (adjust volume)
+    - Life stress (modify intensity)
+    
+    Communicate with your coach or adjust the plan.
+  </Accordion>
+</AccordionGroup>
+
+## Mobile App
+
+<AccordionGroup>
+  <Accordion title="Why is GPS accuracy poor?">
+    Improve GPS by:
+    - Waiting for full lock before starting
+    - Enabling high accuracy mode
+    - Clear view of sky
+    - Updating phone software
+    
+    Consider using a speed sensor for better accuracy.
+  </Accordion>
+
+  <Accordion title="How do I save battery on long rides?">
+    Battery saving tips:
+    - Reduce screen brightness
+    - Turn off auto-upload
+    - Use airplane mode + Bluetooth
+    - External battery pack
+    - Disable unnecessary sensors
+    
+    See [Mobile Setup](/getting-started/mobile-app-setup).
+  </Accordion>
+
+  <Accordion title="Can I use the app offline?">
+    Yes! Offline features:
+    - Record activities
+    - Follow downloaded workouts
+    - View recent history
+    - Sensor connections
+    
+    Syncs when back online.
+  </Accordion>
+
+  <Accordion title="Why won't my sensors connect?">
+    Troubleshooting:
+    1. Only one app can connect at a time
+    2. Check sensor battery
+    3. Toggle Bluetooth off/on
+    4. Remove and re-pair
+    5. Update sensor firmware
+  </Accordion>
+</AccordionGroup>
+
+## Account & Billing
+
+<AccordionGroup>
+  <Accordion title="Can I pause my subscription?">
+    No pause feature, but you can:
+    - Cancel and keep access until period ends
+    - Downgrade to free (keeps recent data)
+    - Re-subscribe anytime
+    - No penalties
+  </Accordion>
+
+  <Accordion title="How do I export all my data?">
+    1. Go to **Account → Profile**
+    2. Click **Export Data**
+    3. Select format (FIT files + CSV)
+    4. Download zip file
+    
+    Do this before downgrading to free plan.
+  </Accordion>
+
+  <Accordion title="Is my payment information secure?">
+    Yes, we use:
+    - Stripe for payment processing
+    - PCI compliant systems
+    - No card numbers stored
+    - Encrypted connections
+    - Regular security audits
+  </Accordion>
+
+  <Accordion title="Can I share my account?">
+    No, accounts are individual. For multiple users:
+    - Each person needs their own account
+    - Team plans available for clubs
+    - Family sharing not supported
+    - Coaches can view athlete data
+  </Accordion>
+</AccordionGroup>
+
+## Teams & Social
+
+<AccordionGroup>
+  <Accordion title="How do privacy settings work?">
+    Control visibility:
+    - **Public**: Everyone can see
+    - **Team Only**: Just team members
+    - **Private**: Only you
+    
+    Set defaults and change per activity. Privacy zones hide home/work locations.
+  </Accordion>
+
+  <Accordion title="Can I join multiple teams?">
+    Yes! Join unlimited teams:
+    - Local club
+    - Coach's team  
+    - Friend groups
+    - Challenge teams
+    
+    Set different privacy per team.
+  </Accordion>
+
+  <Accordion title="How do I find a coach?">
+    Browse coaches:
+    1. Go to **Teams → Find a Coach**
+    2. Filter by specialty/location
+    3. Review profiles
+    4. Contact for consultation
+    
+    See [Working with a Coach](/teams/coaching).
+  </Accordion>
+
+  <Accordion title="What data does my coach see?">
+    Coaches can view:
+    - All activity data
+    - Training metrics
+    - Workout compliance
+    - Your comments
+    
+    You control what activities they see via privacy settings.
+  </Accordion>
+</AccordionGroup>
+
+## Technical Issues
+
+<AccordionGroup>
+  <Accordion title="The app keeps crashing">
+    Try these fixes:
+    1. Update to latest version
+    2. Clear app cache
+    3. Free up phone storage
+    4. Reinstall app
+    5. Contact support
+    
+    See [Troubleshooting](/mobile/troubleshooting).
+  </Accordion>
+
+  <Accordion title="My power data seems wrong">
+    Check:
+    - Power meter calibration
+    - Correct FTP in settings
+    - No data spikes/drops
+    - Proper sensor pairing
+    - Battery levels
+  </Accordion>
+
+  <Accordion title="Activities show wrong time zone">
+    Fix time zones:
+    1. Check device time zone
+    2. Verify GPS location
+    3. Manual correction available
+    4. Set home time zone in profile
+  </Accordion>
+
+  <Accordion title="How do I report a bug?">
+    Report bugs:
+    - In-app: Use chat feature
+    - Email: support@stride.is
+    - Include: Screenshots, device info
+    - Describe: Steps to reproduce
+  </Accordion>
+</AccordionGroup>
+
+## Advanced Features
+
+<AccordionGroup>
+  <Accordion title="What are power curves?">
+    Power curves show your best power output for every duration (1 second to hours). Use them to:
+    - Track improvements
+    - Identify strengths/weaknesses
+    - Compare to past performances
+    - Set training targets
+  </Accordion>
+
+  <Accordion title="How does weather data work?">
+    Weather is automatically added:
+    - Temperature at ride time
+    - Wind speed/direction
+    - Conditions (rain, etc.)
+    - Used for performance context
+    
+    Data from nearest weather station.
+  </Accordion>
+
+  <Accordion title="Can I create custom metrics?">
+    Not directly, but you can:
+    - Add custom fields to activities
+    - Track via notes/tags
+    - Export for external analysis
+    - Request features from support
+  </Accordion>
+
+  <Accordion title="Is there an API?">
+    API access available for:
+    - Pro plan subscribers
+    - Third-party developers
+    - Custom integrations
+    - Bulk operations
+    
+    Contact support for documentation.
+  </Accordion>
+</AccordionGroup>
+
+## Still Need Help?
+
+Can't find your answer?
+
+<CardGroup cols={3}>
+  <Card title="Email Support" icon="envelope">
+    support@stride.is
+    24-48 hour response
+  </Card>
+  <Card title="In-App Chat" icon="comment">
+    Real-time help
+    Available in app
+  </Card>
+  <Card title="Community" icon="users">
+    Join Stride forums
+    Ask other users
+  </Card>
+</CardGroup>
