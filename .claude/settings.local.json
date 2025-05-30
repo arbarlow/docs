@@ -1,8 +1,43 @@
 {
   "permissions": {
     "allow": [
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(find:*)",
+      "Bash(git -C /Users/alex/code/stride log --oneline --since=\"2024-01-01\" --date=short --pretty=format:\"%ad %h %s\")",
+      "Bash(git -C /Users/alex/code/stride-web log --oneline --since=\"2024-01-01\" --date=short --pretty=format:\"%ad %h %s\")",
+      "Bash(git -C /Users/alex/code/stride-mobile log --oneline --since=\"2024-01-01\" --date=short --pretty=format:\"%ad %h %s\")",
+      "Bash(git -C /Users/alex/code/stride show --name-only ba695f8)",
+      "Bash(git -C /Users/alex/code/stride show --name-only 26068f7)",
+      "Bash(git -C /Users/alex/code/stride show --name-only 6b29f5e)",
+      "Bash(git -C /Users/alex/code/stride show --name-only 86e9d71)",
+      "Bash(git -C /Users/alex/code/stride-web show --name-only 4b26b89)",
+      "Bash(git -C /Users/alex/code/stride show --name-only d34e089)",
+      "Bash(git -C /Users/alex/code/stride show --name-only d20f6aa)",
+      "Bash(git -C /Users/alex/code/stride-web show --name-only 3f47a52)",
+      "Bash(git -C /Users/alex/code/stride-mobile show --name-only e957759)",
+      "Bash(git -C /Users/alex/code/stride show --name-only 34beedf)",
+      "Bash(git -C /Users/alex/code/stride show --name-only 69e89aa)",
+      "Bash(git -C /Users/alex/code/stride-web show --name-only bb91241)",
+      "Bash(git -C /Users/alex/code/stride-web show --name-only 6993612)",
+      "Bash(git -C /Users/alex/code/stride log --oneline --before=\"2024-01-01\" --since=\"2023-01-01\" --date=short --pretty=format:\"%ad %h %s\")",
+      "Bash(git -C /Users/alex/code/stride-web log --oneline --before=\"2024-01-01\" --since=\"2023-01-01\" --date=short --pretty=format:\"%ad %h %s\")",
+      "Bash(git -C /Users/alex/code/stride-mobile log --oneline --before=\"2024-01-01\" --since=\"2023-01-01\" --date=short --pretty=format:\"%ad %h %s\")",
+      "Bash(git -C /Users/alex/code/stride log --oneline --reverse)",
+      "Bash(git -C /Users/alex/code/stride-web log --oneline --reverse)",
+      "Bash(git -C /Users/alex/code/stride-mobile log --oneline --reverse)",
+      "Bash(git -C /Users/alex/code/stride log --oneline --date=short --pretty=format:\"%ad %h %s\" --grep=\"Initial\" --grep=\"setup\" --grep=\"GraphQL\" --grep=\"Strava\" --grep=\"Garmin\" --grep=\"Wahoo\" --grep=\"Whoop\" -i)",
+      "Bash(git -C /Users/alex/code/stride show --stat 5e6f0bb)",
+      "Bash(git -C /Users/alex/code/stride show --stat bcba468)",
+      "Bash(git -C /Users/alex/code/stride log --oneline --date=short --pretty=format:\"%ad %h %s\")",
+      "Bash(git -C /Users/alex/code/stride-web log --oneline --date=short --pretty=format:\"%ad %h %s\")",
+      "Bash(git -C /Users/alex/code/stride show --stat 3629aa6)",
+      "Bash(git -C /Users/alex/code/stride show --stat f78d9bf)",
+      "Bash(git -C /Users/alex/code/stride show --stat 09b61d6)",
+      "Bash(git -C /Users/alex/code/stride log --oneline --date=short --pretty=format:\"%ad %h %s\" --grep=\"Stripe\" --grep=\"payment\" --grep=\"billing\" --grep=\"subscription\" -i)",
+      "Bash(git -C /Users/alex/code/stride log --oneline --date=short --pretty=format:\"%ad %h %s\" --grep=\"weather\" --grep=\"Apple\" --grep=\"Redis\" -i)",
+      "Bash(git -C /Users/alex/code/stride-mobile log --oneline --reverse --date=short --pretty=format:\"%ad %h %s\")"
     ],
     "deny": []
-  }
+  },
+  "enableAllProjectMcpServers": false
 }

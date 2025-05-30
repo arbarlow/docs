@@ -94,17 +94,14 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Changelog",
+        "pages": [
+          "changelog"
+        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Guide",
-          "href": "https://docs.stride.is",
-          "icon": "book-open-cover"
-        }
-      ]
-    }
+    ]
   },
   "navbar": {
     "links": [
