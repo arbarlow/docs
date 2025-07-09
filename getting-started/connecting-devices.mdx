@@ -12,15 +12,12 @@ Stride connects with your favorite training devices and platforms to automatical
 Garmin provides the most comprehensive integration with Stride, syncing both activities and allowing workout downloads.
 
 ### What Syncs from Garmin
-- ✅ All cycling activities (indoor and outdoor)
-- ✅ Running, hiking, and other activities
-- ✅ Power, heart rate, and cadence data
-- ✅ GPS routes and maps
-- ✅ Device-recorded metrics
+- ✅ All activities (indoor and outdoor)
+- ✅ Health data (metrics, heart rate, weight, and more)
 
 ### What You Can Send to Garmin
-- ✅ Structured workouts for your Edge or watch
-- ✅ Training plans
+- ✅ Structured workouts to your Edge or watch
+- ✅ Full training plans
 
 <Steps>
   <Step title="Go to Account Settings">
@@ -44,23 +41,16 @@ Garmin provides the most comprehensive integration with Stride, syncing both act
   </Step>
 </Steps>
 
-<Info>
-  **Sync Timing**: Activities typically appear in Stride within 5-10 minutes of uploading to Garmin Connect.
-</Info>
-
-## Wahoo SYSTM
+## Wahoo
 
 Wahoo integration provides activity sync and the ability to push workouts to your ELEMNT device.
 
 ### What Syncs from Wahoo
 - ✅ All activities from ELEMNT devices
-- ✅ Indoor trainer sessions
-- ✅ Power, heart rate, and cadence data
-- ✅ GPS data from outdoor rides
 
 ### What You Can Send to Wahoo
-- ✅ Individual workouts to ELEMNT devices
-- ✅ Full training plans to Wahoo SYSTM
+- ✅ Individual workouts
+- ✅ Full training plans
 
 <Steps>
   <Step title="Open Integrations">
@@ -87,12 +77,9 @@ Whoop provides recovery and readiness data to help optimize your training.
 ### What Syncs from Whoop
 - ✅ HRV (Heart Rate Variability)
 - ✅ Resting heart rate
-- ✅ Sleep data
-- ✅ Recovery scores
-- ✅ Strain data
 
 <Warning>
-  Whoop doesn't record cycling activities - you'll still need a bike computer or the Stride app for that.
+  Whoop doesn't import cycling activities - you'll still need a bike computer or the Stride app for that.
 </Warning>
 
 <Steps>
@@ -115,25 +102,26 @@ Whoop provides recovery and readiness data to help optimize your training.
 
 ## Strava
 
-Strava integration enhances your activities with social features and segment matching.
+The Strava integration is mainly for importing routes, but it also enriches activities with names and descriptions.
 
 ### Important: What Strava Does and Doesn't Do
 
 <Warning>
   **Strava does NOT sync your activity data to Stride.** You need Garmin, Wahoo, or the Stride app to record activities.
+
+	Due to Strava API limitations, we've decided to not support Strava activities syncing to Stride. Even before the limitations, Strava heavily manipulated the data and it is looses accuracy. With Garmin, Wahoo etc and fit files, you'll always get the most data possible including things like gear changes, battery information etc
 </Warning>
 
 ### What Syncs with Strava
-- ✅ Activity names and descriptions (both ways)
-- ✅ Routes for route matching
-- ✅ Stride activities upload to Strava
+- ✅ Activity names
+- ✅ Routes for weather information
+- ✅ Stride activities upload to Strava (if done via the app)
 - ❌ Strava activities do NOT download to Stride
 
 ### Why Connect Strava?
 1. **Automatic Upload**: Your Stride activities appear on Strava
-2. **Segment Matching**: See Strava segments on your activities
-3. **Social Features**: Share with your Strava network
-4. **Route Library**: Access your Strava routes
+2. **Workout Names**: Most atheletes add better names to their workouts with Strava.
+3. **Route Library**: Access your Strava routes
 
 <Steps>
   <Step title="Go to Integrations">
@@ -158,16 +146,12 @@ Strava integration enhances your activities with social features and segment mat
 If you use a device that doesn't integrate directly, you can upload .FIT files manually.
 
 ### Supported File Types
-- ✅ .FIT files (recommended)
-- ✅ .TCX files
-- ✅ .GPX files (route only, no data)
+- ✅ .FIT files
+- ✅ Huge folders of .FIT files
 
 ### How to Upload
-1. Go to **Activities** in Stride
-2. Click **Upload Activity** (cloud icon)
-3. Select your .FIT file
-4. Wait for processing
-5. Edit activity details if needed
+1. Go to (Import)[https://stride.is/account/import] in Stride
+2. Select your .FIT file or data export from a service
 
 ## Troubleshooting Sync Issues
 
@@ -182,13 +166,6 @@ If you use a device that doesn't integrate directly, you can upload .FIT files m
 - Check that sensors are paired to your device before starting
 - Verify the activity uploaded successfully to the device's platform first
 
-### Sync Delays
-Normal sync times:
-- **Garmin**: 5-10 minutes
-- **Wahoo**: 5-15 minutes  
-- **Whoop**: Updates every few hours
-- **Manual Upload**: Immediate
-
 <Info>
-  **Need Help?** Contact support@stride.is with your device type and we'll help troubleshoot.
+  **Need Help?** Contact support from the app and we'll help troubleshoot any activity.
 </Info>

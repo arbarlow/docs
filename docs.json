@@ -18,8 +18,7 @@
             "pages": [
               "index",
               "getting-started/quick-start",
-              "getting-started/connecting-devices",
-              "getting-started/mobile-app-setup"
+              "getting-started/connecting-devices"
             ]
           },
           {
@@ -36,49 +35,27 @@
             "pages": [
               "daily-training/dashboard",
               "daily-training/recording-activities",
-              "daily-training/activity-analysis",
-              "analysis/weather"
+              "daily-training/activity-analysis"
             ]
           },
           {
             "group": "Structured Training",
             "pages": [
               "training/plans",
-              "training/workouts",
-              "training/indoor-training",
-              "training/syncing-workouts",
-              "training/plan-builder"
+              "training/indoor-training"
             ]
           },
           {
             "group": "Performance Analysis",
             "pages": [
               "analysis/progress-tracking",
-              "analysis/comparing-activities",
-              "analysis/courses"
+              "analysis/weather"
             ]
           },
           {
-            "group": "Mobile App",
+            "group": "Teams & Coaching",
             "pages": [
-              "training/using-the-app",
-              "mobile/sensors-and-bluetooth",
-              "mobile/troubleshooting"
-            ]
-          },
-          {
-            "group": "Teams & Social",
-            "pages": [
-              "teams/joining-teams",
               "teams/coaching"
-            ]
-          },
-          {
-            "group": "Account & Settings",
-            "pages": [
-              "account/profile",
-              "account/integrations",
-              "account/billing"
             ]
           }
         ]

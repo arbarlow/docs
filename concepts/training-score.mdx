@@ -53,7 +53,6 @@ When power isn't available:
 | Recovery Ride | 20-40 | 1 hour easy spin |
 | Endurance Ride | 50-80 | 2-3 hour zone 2 |
 | Tempo Workout | 80-120 | 90 min with tempo intervals |
-| Threshold Session | 100-150 | 1 hour with FTP intervals |
 | Long Endurance | 150-250 | 4-5 hour steady ride |
 | Epic/Race | 250+ | Century or hard race |
 
@@ -91,26 +90,26 @@ Same workout, different Training Scores:
 - **Elevation gain** (unless it affects power)
 - **Weather** (but may affect your power output)
 
-## Normalized vs Average Power
+## Weighted vs Average Power
 
-### Why Normalized Power?
+### Why Weighted Power?
 
 Average power doesn't capture the true physiological cost:
 
 **Steady Ride**: 
 - 1 hour at constant 200W
 - Average Power: 200W
-- Normalized Power: 200W
+- Weighted Power: 200W
 
 **Variable Ride**:
 - 30 min at 100W, 30 min at 300W
 - Average Power: 200W
-- Normalized Power: ~245W
+- Weighted Power: ~245W
 - Much harder physiologically!
 
 ### How It Works
 
-Normalized Power:
+Weighted Power:
 1. Calculates 30-second rolling average
 2. Raises to 4th power (emphasizes hard efforts)
 3. Averages these values
@@ -118,46 +117,12 @@ Normalized Power:
 
 This better represents metabolic cost of variable efforts.
 
-## Using Training Score Effectively
-
-### Daily Targets
-
-Based on your goals and fitness:
-
-| Day Type | Target TS | Purpose |
-|----------|-----------|---------|
-| Recovery | 0-40 | Active recovery |
-| Easy | 40-70 | Aerobic maintenance |
-| Moderate | 70-120 | Building fitness |
-| Hard | 120-180 | Key workouts |
-| Epic | 180+ | Special occasions |
-
-### Weekly Patterns
-
-**Build Week Example** (Load ~70):
-- Monday: Rest (0)
-- Tuesday: Intervals (100)
-- Wednesday: Endurance (60)
-- Thursday: Tempo (90)
-- Friday: Recovery (30)
-- Saturday: Long ride (180)
-- Sunday: Endurance (80)
-- **Total**: 540 TS
-
-### Progression Over Time
-
-Safe TS progression:
-- **Week 1**: 400 total
-- **Week 2**: 440 total (+10%)
-- **Week 3**: 480 total (+10%)
-- **Week 4**: 300 total (recovery)
-
 ## Common Misconceptions
 
 ### "Higher is Always Better"
 
 **Wrong!** Quality matters more than quantity:
-- 100 TS of focused intervals > 150 TS of junk miles
+- 100 TS of focused intervals > 150 TS of "junk miles"
 - Recovery rides should be LOW TS
 - Chasing high TS daily leads to burnout
 
@@ -211,7 +176,6 @@ Sometimes perceived effort doesn't match TS:
 Watch for these patterns:
 - TS consistently >150 daily (unsustainable)
 - Never exceeding 80 TS (not challenging yourself)
-- Huge TS variations (300 one day, 0 the next)
 - Only high-intensity TS (no base)
 
 ## Next Steps
@@ -223,12 +187,5 @@ Watch for these patterns:
     href="/concepts/load-and-fatigue"
   >
     See how Training Score builds fitness over time
-  </Card>
-  <Card
-    title="Setting Your FTP"
-    icon="sliders"
-    href="/getting-started/setting-zones"
-  >
-    Ensure accurate Training Score calculation
   </Card>
 </CardGroup>
